@@ -1,37 +1,48 @@
-import { AppBar, Box, Container, Stack } from '@mui/material'
+import { AppBar, Box, Container, Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import './nav.css'
 
 const Nav = () => {
   return (
-    <div className='nav' sx={{position:"fixed", top:"0",width:"100vw", height:"10rem"}}>
+    <div className='nav' sx={{position:"fixed", top:"0",width:"100vw",}}>
       <AppBar>
         <Container>
-          <Stack sx={{flexDirection:"row", justifyContent:"space-between", alignItems:"center"}}>
+          <Grid sx={{display:"flex",
+                     flexDirection:"row", alignItems:"center", justifyContent:"space-between"}}>
+              
+                <Grid item  sx={{ display:"flex",flexDirection:"row", justifyContent:"space-between", alignItems:"center"}}>
+                  <Box alignItems="center">
+                    <Link to="/">
+                      <img src="https://pmt.ng/_next/image?url=%2F_next%2Fstatic%2Fimages%2Flogo-ef368fb9425395f94fe0a63f723c2897.png&w=48&q=75" alt="" />
+                    </Link>
+                  </Box>
 
-            <Stack>
-              <Box>
-                
-                  <img src="https://pmt.ng/_next/image?url=%2F_next%2Fstatic%2Fimages%2Flogo-ef368fb9425395f94fe0a63f723c2897.png&w=48&q=75" alt="" />
-                
-              </Box>
-              <Box>
+                  <Box>
 
-              </Box>
+                    <Link><Typography variant="h5"> PMT.ng</Typography></Link>
+
+                  </Box>
 
 
-            </Stack>
+                </Grid>
 
+                <Grid item sx={{flexDirection:"row",alignItems:"center",justifyContent:"space-between",}}>
+                  <NavLink to="/">Home</NavLink>
+                  <Link to="/Travel">Travel</Link>
+                  <Link to="Terminal">Terminal</Link>
+                  <Link to="Rout">Routes</Link>
+                  <Link to="Shop">Shop</Link>
+                  <Link to="Tech">Tech</Link>
+                  <Link to="Blog">Blog</Link>
+                </Grid>
 
-            <Stack>
-               navigation
-            </Stack>
+                <Grid item>
+                    login Bar
+                </Grid>
 
-            <Stack>
-                login Bar
-            </Stack>
-
-          </Stack>
+              
+          </Grid>
         </Container>
    
       </AppBar>

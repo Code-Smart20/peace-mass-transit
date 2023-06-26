@@ -1,0 +1,13 @@
+a{
+    color: white;
+    margin-bottom: 1rem;
+    transition: all 300ms ease;
+}
+a:hover{
+    color:#fc8800
+}
+
+.footer h5{
+    color:#fc8800;
+    margin-bottom: 2rem;
+}

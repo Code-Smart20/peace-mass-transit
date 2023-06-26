@@ -1,0 +1,11 @@
+.backgroundImg{
+    background-image: url("https://www.pmt.ng/_next/image?url=%2F_next%2Fstatic%2Fimages%2Fbus3-e235cad1c22bcf13364799b949c3df42.png&w=1920&q=75");
+}
+
+.background{
+    background-image: url("https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: 20% 50%;
+    height: 70vh;
+}
